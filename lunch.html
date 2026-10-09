@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>会場周辺の飲食店・コンビニ｜日本情報経営学会 第91回全国大会</title>
+<meta name="description" content="日本情報経営学会 第91回全国大会の会場（九州産業大学 12号館）周辺の飲食店・コンビニエンスストアのご案内">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  #lunch-map { height: 440px; border: 1px solid #ccd; border-radius: 6px; margin: 8px 0 6px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 4px 0 12px; font-size: 0.9em; }
+  .legend span::before { content: ""; display: inline-block; width: 11px; height: 11px; border-radius: 50%;
+                          margin-right: 6px; vertical-align: -1px; background: var(--c); border: 2px solid #fff;
+                          box-shadow: 0 0 0 1px #888; }
+  .legend .venue::before { border-radius: 2px; }
+  @media (max-width: 720px) { #lunch-map { height: 340px; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <h1 class="site-title">
+      <a href="index.html">
+        日本情報経営学会
+        <strong>第91回全国大会</strong>
+      </a>
+    </h1>
+    <div class="site-header__date">2026年11月14日(土)・15日(日) / 九州産業大学</div>
+  </div>
+</header>
+
+<nav class="global-nav">
+  <div class="global-nav__inner">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav-list" aria-label="メニューを開く">
+      <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      メニュー
+    </button>
+    <ul id="global-nav-list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="program.html">プログラム</a></li>
+      <li><a href="registration.html">大会参加申込</a></li>
+      <li><a href="submission.html">研究発表申込</a></li>
+      <li><a href="proceedings.html">予稿提出</a></li>
+      <li><a href="access.html" class="is-current">会場アクセス</a></li>
+      <li><a href="committee.html">実行委員会</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <h2 class="page-title">会場周辺の飲食店・コンビニ</h2>
+
+  <p class="note note--accent">
+    大会期間中（土曜日・日曜日）の学内の食堂・売店の営業は、現在のところ未定です。会場周辺のお店もあわせてご利用ください。<br>
+    <strong>営業時間・定休日は変更されることがあります。ご来店前に各店舗にご確認ください。</strong>
+  </p>
+
+  <section class="section">
+    <h3 class="section__title">地図</h3>
+    <div class="legend">
+      <span class="venue" style="--c:#c0392b">会場（12号館）</span>
+      <span style="--c:#27935a">コンビニ</span>
+      <span style="--c:#e07b00">弁当</span>
+      <span style="--c:#8a5cb8">スーパー・ドラッグストア</span>
+      <span style="--c:#1f6fb2">飲食店</span>
+    </div>
+    <div id="lunch-map" role="img" aria-label="会場周辺の飲食店・コンビニの地図"></div>
+    <p class="note">
+      店名をクリック（タップ）すると、12号館の正面玄関（南側）からの徒歩の道順と所要時間を Googleマップで確認できます。
+      表は、おおむね会場に近い順に並べています。
+    </p>
+  </section>
+
+  <section class="section">
+    <h3 class="section__title">コンビニエンスストア</h3>
+    <p>いずれも24時間営業です。</p>
+    <table class="info-table">
+      <thead>
+        <tr><th>店名</th><th>所在地（福岡市東区）</th></tr>
+      </thead>
+      <tbody>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.673332,130.444870&amp;travelmode=walking" target="_blank" rel="noopener">ファミリーマート 唐原7丁目店</a></th><td>唐原7丁目1-18</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672199,130.448914&amp;travelmode=walking" target="_blank" rel="noopener">ローソン 福岡下原四丁目店</a></th><td>下原4丁目4-19</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.670921,130.442490&amp;travelmode=walking" target="_blank" rel="noopener">セブン-イレブン 福岡九産大駅西店</a></th><td>香住ケ丘2丁目9-27</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.667652,130.444738&amp;travelmode=walking" target="_blank" rel="noopener">セブン-イレブン 九産大前店</a></th><td>松香台1丁目4-5</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.668777,130.442673&amp;travelmode=walking" target="_blank" rel="noopener">セブン-イレブン 福岡香住ヶ丘2丁目店</a></th><td>香住ケ丘2丁目4-16</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672955,130.441330&amp;travelmode=walking" target="_blank" rel="noopener">ファミリーマート 九産大駅前店</a></th><td>香住ケ丘2丁目15-25</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.668171,130.452240&amp;travelmode=walking" target="_blank" rel="noopener">ファミリーマート オークタウン北店</a></th><td>香椎駅東3丁目22-8</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.668431,130.453165&amp;travelmode=walking" target="_blank" rel="noopener">セブン-イレブン 福岡香椎下原小南店</a></th><td>下原1丁目1285-1</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672276,130.455368&amp;travelmode=walking" target="_blank" rel="noopener">ローソン 下原一丁目店</a></th><td>下原1丁目17-19</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h3 class="section__title">弁当</h3>
+    <table class="info-table">
+      <thead>
+        <tr><th>店名</th><th>所在地（福岡市東区）</th><th>営業時間</th></tr>
+      </thead>
+      <tbody>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.673260,130.444839&amp;travelmode=walking" target="_blank" rel="noopener">本家かまどや 九産大前店</a></th><td>唐原7丁目2-2</td><td>10:00〜21:00（第2・第4水曜定休）</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.669178,130.442780&amp;travelmode=walking" target="_blank" rel="noopener">ほっともっと 九産大前店</a></th><td>香住ケ丘2丁目7-4</td><td>9:00〜23:00</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.669014,130.455139&amp;travelmode=walking" target="_blank" rel="noopener">ほっともっと 香椎下原店</a></th><td>香椎駅東4丁目46-10</td><td>8:00〜22:00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h3 class="section__title">スーパー・ドラッグストア</h3>
+    <table class="info-table">
+      <thead>
+        <tr><th>店名</th><th>種別</th><th>所在地（福岡市東区）</th><th>営業時間</th></tr>
+      </thead>
+      <tbody>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672558,130.450790&amp;travelmode=walking" target="_blank" rel="noopener">マックスバリュ（ブランチ福岡下原内）</a></th><td>スーパー</td><td>下原4丁目2-1</td><td>9:00〜24:00</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672558,130.450790&amp;travelmode=walking" target="_blank" rel="noopener">マツモトキヨシ（ブランチ福岡下原内）</a></th><td>ドラッグストア</td><td>下原4丁目2-1</td><td>9:00〜24:00</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.667881,130.440140&amp;travelmode=walking" target="_blank" rel="noopener">ダイレックス 香椎店</a></th><td>ドラッグストア</td><td>香住ケ丘1丁目7-20</td><td>9:00〜22:00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h3 class="section__title">飲食店</h3>
+    <p>商業施設「ブランチ福岡下原」（下原4丁目2-1）に、飲食店とスーパーが集まっています。</p>
+    <table class="info-table">
+      <thead>
+        <tr><th>店名</th><th>ジャンル</th><th>所在地（福岡市東区）</th><th>営業時間</th></tr>
+      </thead>
+      <tbody>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.667877,130.445221&amp;travelmode=walking" target="_blank" rel="noopener">カレーハウスCoCo壱番屋 九産大前店</a></th><td>カレー</td><td>松香台1丁目7-26</td><td>10:45〜24:00（ラストオーダー）</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672558,130.450790&amp;travelmode=walking" target="_blank" rel="noopener">サイゼリヤ（ブランチ福岡下原内）</a></th><td>イタリアン</td><td>下原4丁目2-1</td><td>10:00〜23:00（年中無休）</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672558,130.450790&amp;travelmode=walking" target="_blank" rel="noopener">どんどん亭（ブランチ福岡下原内）</a></th><td>お好み焼</td><td>下原4丁目2-1</td><td>土日祝 11:30〜23:30（L.O. 22:30）</td></tr>
+        <tr><th><a href="https://www.google.com/maps/dir/?api=1&amp;origin=33.671211,130.446072&amp;destination=33.672558,130.450790&amp;travelmode=walking" target="_blank" rel="noopener">辛麺屋 桝元（ブランチ福岡下原内）</a></th><td>辛麺</td><td>下原4丁目2-1</td><td>11:00〜22:00</td></tr>
+      </tbody>
+    </table>
+    <p class="note">
+      掲載している店舗と営業時間は、各社の公式店舗情報および
+      <a href="https://www.branch-sc.com/f-shimobaru/shop/index.jsp?bf=8" target="_blank" rel="noopener">ブランチ福岡下原 ショップガイド</a>
+      で確認したものです（2026年9月時点）。
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="copyright">© 2026 日本情報経営学会 第91回全国大会 実行委員会</p>
+  </div>
+</footer>
+
+<script src="js/nav.js?v=20260921"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function () {
+  if (typeof L === 'undefined') return;
+  var VENUE = [33.671211, 130.446072];   // 12号館 正面玄関（南側）
+  var map = L.map('lunch-map', { scrollWheelZoom: false });
+  L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '出典：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a>'
+  }).addTo(map);
+
+
+  L.marker(VENUE, {
+    icon: L.divIcon({
+      className: '',
+      html: '<div style="width:16px;height:16px;background:#c0392b;border:3px solid #fff;box-shadow:0 0 0 1px #555;border-radius:3px"></div>',
+      iconSize: [22, 22], iconAnchor: [11, 11]
+    }),
+    zIndexOffset: 1000
+  }).addTo(map).bindPopup('<strong>会場：九州産業大学 12号館</strong><br>正面玄関（南側）', { autoPan: false });
+
+  var places = [
+    { name: 'ファミリーマート 唐原7丁目店', sub: 'コンビニ', color: '#27935a', ll: [33.673332, 130.444870], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.673332,130.444870&travelmode=walking' },
+    { name: 'ローソン 福岡下原四丁目店', sub: 'コンビニ', color: '#27935a', ll: [33.672199, 130.448914], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672199,130.448914&travelmode=walking' },
+    { name: 'セブン-イレブン 福岡九産大駅西店', sub: 'コンビニ', color: '#27935a', ll: [33.670921, 130.442490], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.670921,130.442490&travelmode=walking' },
+    { name: 'セブン-イレブン 九産大前店', sub: 'コンビニ', color: '#27935a', ll: [33.667652, 130.444738], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.667652,130.444738&travelmode=walking' },
+    { name: 'セブン-イレブン 福岡香住ヶ丘2丁目店', sub: 'コンビニ', color: '#27935a', ll: [33.668777, 130.442673], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.668777,130.442673&travelmode=walking' },
+    { name: 'ファミリーマート 九産大駅前店', sub: 'コンビニ', color: '#27935a', ll: [33.672955, 130.441330], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672955,130.441330&travelmode=walking' },
+    { name: 'ファミリーマート オークタウン北店', sub: 'コンビニ', color: '#27935a', ll: [33.668171, 130.452240], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.668171,130.452240&travelmode=walking' },
+    { name: 'セブン-イレブン 福岡香椎下原小南店', sub: 'コンビニ', color: '#27935a', ll: [33.668431, 130.453165], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.668431,130.453165&travelmode=walking' },
+    { name: 'ローソン 下原一丁目店', sub: 'コンビニ', color: '#27935a', ll: [33.672276, 130.455368], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672276,130.455368&travelmode=walking' },
+    { name: '本家かまどや 九産大前店', sub: '弁当', color: '#e07b00', ll: [33.673260, 130.444839], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.673260,130.444839&travelmode=walking' },
+    { name: 'ほっともっと 九産大前店', sub: '弁当', color: '#e07b00', ll: [33.669178, 130.442780], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.669178,130.442780&travelmode=walking' },
+    { name: 'ほっともっと 香椎下原店', sub: '弁当', color: '#e07b00', ll: [33.669014, 130.455139], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.669014,130.455139&travelmode=walking' },
+    { name: 'マックスバリュ（ブランチ福岡下原内）', sub: 'スーパー', color: '#8a5cb8', ll: [33.672558, 130.450790], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672558,130.450790&travelmode=walking' },
+    { name: 'マツモトキヨシ（ブランチ福岡下原内）', sub: 'ドラッグストア', color: '#8a5cb8', ll: [33.672558, 130.450790], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672558,130.450790&travelmode=walking' },
+    { name: 'ダイレックス 香椎店', sub: 'ドラッグストア', color: '#8a5cb8', ll: [33.667881, 130.440140], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.667881,130.440140&travelmode=walking' },
+    { name: 'カレーハウスCoCo壱番屋 九産大前店', sub: 'カレー', color: '#1f6fb2', ll: [33.667877, 130.445221], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.667877,130.445221&travelmode=walking' },
+    { name: 'サイゼリヤ（ブランチ福岡下原内）', sub: 'イタリアン', color: '#1f6fb2', ll: [33.672558, 130.450790], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672558,130.450790&travelmode=walking' },
+    { name: 'どんどん亭（ブランチ福岡下原内）', sub: 'お好み焼', color: '#1f6fb2', ll: [33.672558, 130.450790], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672558,130.450790&travelmode=walking' },
+    { name: '辛麺屋 桝元（ブランチ福岡下原内）', sub: '辛麺', color: '#1f6fb2', ll: [33.672558, 130.450790], url: 'https://www.google.com/maps/dir/?api=1&origin=33.671211,130.446072&destination=33.672558,130.450790&travelmode=walking' }
+  ];
+  places.forEach(function (p) {
+    var html = '<strong>' + p.name + '</strong>' + (p.sub ? '<br>' + p.sub : '') +
+               '<br><a href="' + p.url + '" target="_blank" rel="noopener">道順を見る（Googleマップ）</a>';
+    L.circleMarker(p.ll, { radius: 7, color: '#fff', weight: 2, fillColor: p.color, fillOpacity: 1 })
+      .addTo(map).bindPopup(html);
+  });
+  // 会場とすべての店舗が収まる縮尺で表示する
+  map.fitBounds(L.latLngBounds([VENUE].concat(places.map(function (p) { return p.ll; }))), { padding: [28, 28] });
+})();
+</script>
+</body>
+</html>
