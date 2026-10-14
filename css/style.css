@@ -614,3 +614,97 @@ main {
   color: var(--accent);
   font-weight: 700;
 }
+
+/* ---------- 研究発表プログラム（2026/10/13） ---------- */
+.program-room {
+  margin: 28px 0 8px;
+  padding: 8px 12px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--primary);
+}
+.program-room__kind {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.program-session {
+  margin: 0 0 8px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+.program-table th {
+  width: 9.5em;
+  white-space: nowrap;
+}
+.program-kind {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 0 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  background: #fff;
+}
+.program-title {
+  display: block;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+.program-authors {
+  display: block;
+  margin-top: 4px;
+}
+@media (max-width: 640px) {
+  .program-table th { width: auto; white-space: normal; }
+}
+
+/* ---- 研究発表プログラム：時刻を行、会場を列にした表（10/14） ---- */
+.program-grid-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 8px 0 28px;
+}
+.program-grid {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.program-grid th,
+.program-grid td {
+  border: 2px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.program-grid thead th {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+.program-grid .pg-time {
+  width: 6.2em;
+  background: var(--bg-soft);
+  color: var(--primary);
+  font-weight: 700;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.program-grid thead .pg-time { background: var(--primary); color: #fff; }
+.pg-room { display: block; font-size: 0.85rem; font-weight: 400; }
+.pg-kind { display: block; font-size: 0.85rem; }
+.pg-role { display: block; font-size: 0.85rem; color: #555; }
+.pg-empty { color: #888; text-align: center !important; vertical-align: middle !important; }
+.pg-merged { background: #f7f9fc; }
+.pg-note { display: block; margin-bottom: 6px; font-size: 0.9rem; }
+.pg-sp { display: block; padding: 6px 0; }
+.pg-sp + .pg-sp { border-top: 1px dotted var(--border); }
+.pg-sp-time { display: block; font-weight: 700; color: var(--primary); }
